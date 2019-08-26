@@ -1,0 +1,19 @@
+.toolbar-background {
+    top: 5px;
+    transform: translateZ(0px);
+    contain: strict;
+    opacity: var(--opacity);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.brown{
+    color: #232f34;
+}
+.feature{
+    color: #232f34;
+    margin-left: 14px;
+    font-weight: 700;
+    margin-top: 20px    !important
+    
+}
