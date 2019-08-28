@@ -16,7 +16,7 @@
     font-weight: 1000;
     color: #232f34;
     text-align: left;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 25%;
 }
 
@@ -46,4 +46,32 @@
     text-align: left;
     margin-top: 25%;
     margin-left: 5%;
+}
+
+.cat-comida{
+    height: 100%; //altura
+    width: 20%;   //anchura
+    border-radius: 100px;
+    margin-left: 3%;
+}
+
+.cat-ropa{
+    height: 100%;
+    width: 20%;
+    border-radius: 100px;
+    margin-left: 2%;
+}
+
+.cat-electro{
+    height: 100%;
+    width: 20%;
+    border-radius: 100px;
+    margin-left: 2%;
+}
+
+.cat-servi{
+    height: 100%;
+    width: 20%;
+    border-radius: 100px;
+    margin-left: 2%;
 }
