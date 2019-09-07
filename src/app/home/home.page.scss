@@ -42,7 +42,7 @@
 
 .tipo-text-cat{
     font-weight: 600;
-    color: #232f34;
+    color: #4a6572;
     text-align: left;
     margin-top: 25%;
     margin-left: 5%;
@@ -73,5 +73,37 @@
     height: 100%;
     width: 20%;
     border-radius: 100px;
+    margin-left: 2%;
+}
+
+.tipo-text-des{
+    font-weight: 600;
+    color: #4a6572;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.tam-slides2{
+    background: #232f34;
+    width: 100%;
+    border-radius: 25px;
+    height: 200px;
+    top: 5%;
+}
+
+.text-comida{
+    font-weight: 200;
+    color: #232f34;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+.text-ropa{
+    font-weight: 200;
+    color: #232f34;
+    text-align: left;
+    margin-top: 0;
     margin-left: 2%;
 }
