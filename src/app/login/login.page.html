@@ -24,17 +24,17 @@
        <div class="padding-40 mg-top-50">
           <ion-item color="$" class="blanco">
               <ion-label position="stacked" class="blanco bold">E-mail</ion-label>
-              <ion-input type="email"></ion-input>
+              <ion-input type="email" [(ngModel)]= "email" ></ion-input>
             </ion-item>
           
             <ion-item color="$" class="blanco">
                 <ion-label position="stacked" class="blanco bold">Contraseña</ion-label>
-                <ion-input type="password"></ion-input>
+                <ion-input type="password" [(ngModel)]= "password" ></ion-input>
               </ion-item>
         </div>
         <!--BOTON-->
-        <div class="padding-40 mg-top-50" routerLink="/home"> <!--Routerlink sirve para navegar entre paginas-->
-          <ion-button expand="block">Entrar</ion-button>
+        <div class="padding-40 mg-top-50"> <!--Routerlink sirve para navegar entre paginas-->
+          <ion-button (click) ="onSubmitLogin()" expand="block">Entrar</ion-button> <!--aqui esta el boton de login con firebase(click)-->
           </div>
           <!--CREAR CUENTA-->
             <div class="txt-registrar bold center mg-top-5 blanco" routerLink="/registrar">
