@@ -7,7 +7,10 @@ const routes: Routes = [
   { path: 'registrar', loadChildren: './registrar/registrar.module#RegistrarPageModule' },
   { path: 'recuperar', loadChildren: './recuperar/recuperar.module#RecuperarPageModule' },
   { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },  { path: 'ropa', loadChildren: './ropa/ropa.module#RopaPageModule' },
+  { path: 'electronica', loadChildren: './electronica/electronica.module#ElectronicaPageModule' },
+  { path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule' },
+
 ];
 
 @NgModule({
