@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ElectroService, electro } from '../servicios/electro.service';
 
 @Component({
   selector: 'app-electronica',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElectronicaPage implements OnInit {
 
-  constructor() { }
+  public electronic: any = [];
+
+  constructor( public electroservice: ElectroService) {}
 
   ngOnInit() {
+    this.electroservice.getComidas().subscribe( chats => {
+      this.electronic = chats;
+    });
   }
-
 }

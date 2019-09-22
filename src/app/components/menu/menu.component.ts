@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../servicios/auth.service';
+import { auth } from 'firebase';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authservice: AuthService) { }
 
   ngOnInit() {}
 
+  OnLogout() {
+    this.authservice.logout();
+  }
 }

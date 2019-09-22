@@ -18,7 +18,7 @@
          <div class="padding-40 mg-top-50">
             <ion-item color="$" class="blanco">
                 <ion-label position="stacked" class="blanco bold">E-mail</ion-label>
-                <ion-input type="email"></ion-input>
+                <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
               </ion-item>
 
               <ion-item color="$" class="blanco">
@@ -28,12 +28,12 @@
             
               <ion-item color="$" class="blanco">
                   <ion-label position="stacked" class="blanco bold">Contraseña</ion-label>
-                  <ion-input type="password"></ion-input>
+                  <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
                 </ion-item>
           </div>
           <!--BOTON-->
           <div class="padding-40 mg-top-50">
-            <ion-button expand="block">Registrar</ion-button>
+            <ion-button expand="block" (click)="OnSubmitRegister()" >Registrar</ion-button>
             </div>
             <!--REGRESAR A LOGIN-->
             <div class="txt-registrar center mg-top-50 blanco" routerLink="/login">

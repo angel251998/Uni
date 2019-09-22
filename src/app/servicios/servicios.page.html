@@ -16,57 +16,15 @@
   </div>
 
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let servi of servic">
 
       <img slot="start" class="redondo" VSPACE="20" src="assets/servicios.png">
 
       <ion-label>
-        <h2>Deberes</h2>
-        <h3>$24</h3>
+        <h1>{{servi.nombre}}</h1>
+        <h3>{{servi.description}}<br>{{servi.valor}}</h3>
 
       </ion-label>
     </ion-item>
-    
-      <ion-item>
-
-          <img slot="start" class="redondo" VSPACE="20" src="assets/servicios.png">
-    
-          <ion-label>
-            <h2>Masajes</h2>
-            <h3>$10</h3>
-    
-          </ion-label>
-        </ion-item>
-        <ion-item>
-
-            <img slot="start" class="redondo" VSPACE="20" src="assets/servicios.png">
-      
-            <ion-label>
-              <h2>carinito</h2>
-              <h3>$32</h3>
-      
-            </ion-label>
-          </ion-item>
-          <ion-item>
-
-              <img slot="start" class="redondo" VSPACE="20" src="assets/servicios.png">
-        
-              <ion-label>
-                <h2>drugs</h2>
-                <h3>$10</h3>
-        
-              </ion-label>
-            </ion-item>
-            <ion-item>
-
-                <img slot="start" class="redondo" VSPACE="20" src="assets/servicios.png">
-          
-                <ion-label>
-                  <h2>abrazos</h2>
-                  <h3>$24</h3>
-          
-                </ion-label>
-              </ion-item>
-    
   </ion-list>
 </ion-content>

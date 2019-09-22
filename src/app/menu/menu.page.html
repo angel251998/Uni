@@ -5,40 +5,22 @@
     </ion-buttons>
     <ion-buttons slot="secondary">
     </ion-buttons>
-    <ion-title class="brown">Menu</ion-title>
+    <ion-title class="brown">Comida</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <!--LISTA-->
   <div>
-    <h4 class="feature">Hamburguesas</h4>
+    <h4 class="feature">Lo mejor en Ecotec</h4>
   </div>
 
   <ion-list>
-    <ion-item>
-
+    <ion-item *ngFor="let menus of comidas">
       <img slot="start" class="redondo" VSPACE="20" src="assets/nacho.jpg">
-
       <ion-label>
-        <h1>Nacho Burguers</h1>
-        <h3>Haburguesa con queso y huevo<br>$3,00</h3>
-      </ion-label>
-    </ion-item>    
-  </ion-list>
-
-  <div>
-    <h4 class="feature">Bebidas</h4>
-  </div>
-
-  <ion-list>
-    <ion-item>
-
-      <img slot="start" class="redondo" VSPACE="20" src="assets/nacho.jpg">
-
-      <ion-label>
-        <h1>Jugos company</h1>
-        <h3>jugo natural de naranja<br>$1,00</h3>
+        <h1>{{menus.nombre}}</h1>
+        <h3>{{menus.description}}<br>{{menus.valor}}</h3>
       </ion-label>
     </ion-item>    
   </ion-list>

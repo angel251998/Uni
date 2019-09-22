@@ -5,7 +5,7 @@
     </ion-buttons>
     <ion-buttons slot="secondary">
     </ion-buttons>
-    <ion-title class="brown">Menu</ion-title>
+    <ion-title class="brown">Ropa</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,55 +16,14 @@
   </div>
 
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let ropas of ropas" > 
 
       <img slot="start" class="redondo" VSPACE="20" src="assets/ropa.jfif">
 
       <ion-label>
-        <h2>Gucci</h2>
-        <h3>$24</h3>
-
+        <h1>{{ropas.nombre}}</h1>
+        <h3>{{ropas.description}}<br>{{ropas.valor}}</h3>
       </ion-label>
     </ion-item>
-    
-      <ion-item>
-
-        <img slot="start" class="redondo" VSPACE="20" src="assets/ropa.jfif">
-          <ion-label>
-            <h2>Calvin Klein</h2>
-            <h3>$10</h3>
-    
-          </ion-label>
-        </ion-item>
-        <ion-item>
-
-          <img slot="start" class="redondo" VSPACE="20" src="assets/ropa.jfif">
-      
-            <ion-label>
-              <h2>Suprem</h2>
-              <h3>$32</h3>
-      
-            </ion-label>
-          </ion-item>
-          <ion-item>
-
-            <img slot="start" class="redondo" VSPACE="20" src="assets/ropa.jfif">
-              <ion-label>
-                <h2>Adidas</h2>
-                <h3>$10</h3>
-        
-              </ion-label>
-            </ion-item>
-            <ion-item>
-
-              <img slot="start" class="redondo" VSPACE="20" src="assets/ropa.jfif">
-          
-                <ion-label>
-                  <h2>Nike</h2>
-                  <h3>$24</h3>
-          
-                </ion-label>
-              </ion-item>
-    
   </ion-list>
 </ion-content>

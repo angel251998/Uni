@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService, menus } from '../servicios/menu.service';
+// import { Script } from 'vm';
+
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPage implements OnInit {
 
-  constructor() { }
+  public comidas: any = [];
+
+  constructor( public menuservice: MenuService) {}
 
   ngOnInit() {
+    this.menuservice.getComidas().subscribe( chats => {
+      this.comidas = chats;
+    });
   }
-
-}
+  }
