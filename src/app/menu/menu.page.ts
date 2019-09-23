@@ -9,7 +9,9 @@ import { MenuService, menus } from '../servicios/menu.service';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
-
+   UserName: string= "";
+   message: string= "";
+   messages =[];
   public comidas: any = [];
 
   constructor( public menuservice: MenuService) {}

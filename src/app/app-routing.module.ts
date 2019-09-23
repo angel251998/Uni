@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule', canActivate : [AuthGuard] },
   { path: 'ropa', loadChildren: './ropa/ropa.module#RopaPageModule' },
   { path: 'electronica', loadChildren: './electronica/electronica.module#ElectronicaPageModule' },
-  { path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule' },
+  { path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule' },  { path: 'chats', loadChildren: './chats/chats.module#ChatsPageModule' },
+
 
 ];
 

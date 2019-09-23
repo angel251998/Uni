@@ -18,7 +18,7 @@
   <ion-list>
     <ion-item *ngFor="let menus of comidas">
       <img slot="start" class="redondo" VSPACE="20" src="assets/nacho.jpg">
-      <ion-label>
+      <ion-label routerLink="/chats">
         <h1>{{menus.nombre}}</h1>
         <h3>{{menus.description}}<br>{{menus.valor}}</h3>
       </ion-label>
