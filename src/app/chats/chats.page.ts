@@ -7,12 +7,14 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./chats.page.scss'],
 })
 export class ChatsPage implements OnInit {
-  UserName: string = "";
+  name: string= "";
   message: string = "";
   messages = [];
+  
   constructor(public navCtr1: NavController) {
     this.getMessages();
   }
+
   getMessages() {
     var messagesREf = firebase.database().ref().child("mensajes");
     messagesREf.on("value", (snap) => {
@@ -26,11 +28,13 @@ export class ChatsPage implements OnInit {
   }
   sendMessage(){
     var messagesRef = firebase.database().ref().child("mensajes");
-    messagesRef.push({mensaje: this.message, nombre: "Guille" });
+    messagesRef.push({mensaje: this.message, nombre: this.name });
     this.message = "";
   }
 
   ngOnInit() {
   }
 
+  
+  
 }
