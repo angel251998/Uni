@@ -1,0 +1,7 @@
+{
+  "appId": "Uni.Express.com",
+  "appName": "UniExpress",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

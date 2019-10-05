@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'ropa', loadChildren: './ropa/ropa.module#RopaPageModule' },
   { path: 'electronica', loadChildren: './electronica/electronica.module#ElectronicaPageModule' },
   { path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule' },  { path: 'chats', loadChildren: './chats/chats.module#ChatsPageModule' },
+  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
 
 
 ];

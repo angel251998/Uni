@@ -5,13 +5,15 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list>
-      <ion-item>Inicio</ion-item>
+    <ion-menu-toggle>
+      <ion-list>
+      <ion-item (click)="OnHome()">Inicio</ion-item>
       <ion-item>Publicar</ion-item>
-      <ion-item>Cuenta</ion-item>
-      <ion-item>Mis Publicaciones</ion-item>
+      <ion-item (click)="OnCuenta()">Cuenta</ion-item>
       <ion-item>Preguntas</ion-item>
       <ion-item (click)="OnLogout()">Cerrar Sesión</ion-item>
     </ion-list>
+    </ion-menu-toggle>
+    
   </ion-content>
 </ion-menu>

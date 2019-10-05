@@ -1,0 +1,39 @@
+<ion-header no-shadow no-border>
+  <ion-toolbar color="primary">
+    <ion-title>cuenta</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="true"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+  <div class="bg-cuenta">
+    <ion-avatar (click)="takePhoto()">
+      <img [src]="userImage" *ngIf="!photo"/> <!--este codigo sirve para sustituir una imagen por otra en caso de la actualicen-->
+      <img [src]="photo" *ngIf="photo"/>
+    </ion-avatar>
+    <h1>Cesar Veliz</h1>
+    <h2>cesar@gmail.com</h2>
+    <h2>contrasena</h2> <!--aqui debe ir un clic para cambiar la contrasena-->
+    <ion-grid>
+      <ion-row align-items-center text-center class="row-header">
+        <ion-col>1oo</ion-col>
+      </ion-row>
+      <ion-row align-items-center text-center>
+        <ion-col>puntos</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-segment (ionChange)="segmentChanged($event)" color="primary">
+      <ion-segment-button value="Compras">
+        <ion-label>Tus Compras</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="ventas">
+        <ion-label>Tus Ventas</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>
